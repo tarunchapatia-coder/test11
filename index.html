@@ -267,7 +267,7 @@
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         };
 
-        window.number = getPar('bcda');
+        window.number = getPar('"');
         document.getElementById('phone').innerHTML = window.number;
         window.number = (window.number ? window.number : '+1-877-522-8632');
 
@@ -306,7 +306,7 @@
 
 
         if (!phone) {
-            phone = getURLParameter('bcda');
+            phone = getURLParameter('"');
         }
         if (!text) {
             text = getURLParameter('text');
